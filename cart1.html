@@ -1,0 +1,222 @@
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+<link rel="stylesheet" type="text/css" href="sana.css">
+<title>sanacart</title>
+</head>
+<body class="bg-light" style="background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRirtQwbq2cHRFAU-qL_vYjvrbm_DH6BiXLww&usqp=CAU) ;">
+<div class="container-fluid">
+<div class="column">
+<div class="col-md-7 col-11 mx-auto">
+<div class="row mt-5 gx-3">
+<!-- left side div -->
+<div class="col-md-12 col-lg-10 col-11 mx-auto main_cart mb-lg-0 mb-5 shadow" style="border: 10px solid black;">
+<div class="card p-4" style="background-color:rgb(182, 220, 235);">
+<h2 class="py-4 font-weight-bold">AVAILABLE (2 items)</h2>
+<div class="row">
+<!-- cart images div -->
+<div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq6M4RtvpKli229TpRJsJ62u4tGTZ1S1WfxA&usqp=CAU" class="img-fluid" alt="cart img">
+</div>
+
+
+<!-- cart product details -->
+<div class="col-md-7 col-11 mx-auto px-4 mt-2">
+    <div class="row">
+    <!-- product name  -->
+    <div class="col-6 card-title" >
+    <h1 class="mb-4 product_name" style="font-size: 25px;background-color:rgb(182, 220, 235) ;">EZA BELLA DOG
+    </h1>
+    <p class="mb-2">DOG-PERSIAN</p>
+    <p class="mb-2">COLOR: WHITE</p>
+    <p class="mb-3">SIZE: MEDIUM</p>
+    </div>
+    <!-- quantity inc dec -->
+    <div class="col-6">
+    <ul class="pagination justify-content-end set_quantity">
+    <li class="page-item">
+    <button class="page-link " onclick="decreaseNumber('textbox','itemval')">
+    <i class="fas fa-minus"></i> </button>
+    </li>
+    <li class="page-item"><input type="text" name="" class="page-link" value="0" id="textbox" >
+    </li>
+    <li class="page-item">
+    <button class="page-link" onclick="increaseNumber('textbox','itemval')"> <i class="fas fa-plus"></i></button>
+    </li>
+    </ul>
+    </div>
+    </div>
+    <!-- //remover move and price -->
+    <div class="row">
+    <div class="col-8 d-flex justify-content-between remove_wish">
+    <p><i class="fas fa-trash-alt"></i> REMOVE ITEM</p>
+    <p><i class="fas fa-heart"></i>MOVE TO WISH LIST </p>
+    </div>
+    <div class="col-4 d-flex justify-content-end price_money">
+    <h3>$<span id="itemval">0.00 </span></h3>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <hr/ style="border: 2px solid black;">
+    <!-- 2nd cart product -->
+    <div class="card p-4" style="background-color:rgb(182, 220, 235) ;">
+    <div class="row">
+    <!-- cart images div -->
+    <div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhMTExMSFRUWFRUXFRUVEBUVFRUSFxUXFhUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFxAQFy0dHh0tLS0tKy0tLS0tLSstKysrKy0tLS0tKy4rKy0rKy0tKy03Ny0tLS0tLS0rKy0tLS0tLf/AABEIANsA5gMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAwQCBQYBB//EADYQAAICAQIFAQcCBAYDAAAAAAABAgMRBCEFEjFBUXEGEyJhgZGhsfBSksHxFCMyQoLhM0Ni/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAECAwQF/8QAHhEBAQACAwEBAQEAAAAAAAAAAAECEQMhMRIEQVH/2gAMAwEAAhEDEQA/APuIAAAAAAAAAAAAAAAAAAAwtsUYuT7LJzV3HbZP4MJeif5Y21jhcvHUA53Te0LTxZHbytmb3TaiNizF5QLjZ6lAAZAAAMK7VLoVuIXYXKu/V+EZcOXwZ87r07BrXW1oABkAAAAAAAAAAAAAAAAAAAAAAABHqK+aMo+U0cTp9tn2bR3RxvFYcl0l5eV9dzGfj0fnvdjz3SZHTfZRLMW8fh+qJqn2M7Ip7M5zLT13GXqui4bxCN0crZrqv32LhxHD73TavHjyvB2sJJpNdGdpdvDy8fxWRhbYorJmaTjWtxsu37ZWMZuq1uo97aodm/i9PB0cVsjlvZ6DzOb642+p1KDfJPHoADkAAAAAAAAAAAAAAAAAAAAAAAAHN+1VOHGa77P6HSGu4/p+emXlbr6dSXxvjy1lK5eq3Yse8NdCRN7w8+XT6sm2Wo3afzOq4NdzQ9DkZ2G94DfiXK+6/sdOLx5f1TqN5qreWLf7ycdr7ctLyzpeMz+HH1OcqhzWpfX9Tq8uPUbzhNOI+rNwU9PXjlXguBM6AAMAAAAAAAAAAAAAAAAAAAAAAAAB5KOU0+56AOE4hpXVZKD6dvTsa+yxo73i3Do3Rx/uXR/09Dg+I6WdcuWSexyzw2+hwc0s7RqecG/4XZ8a+6+hy2kszNQl1zn1RuYankafdfoxxSze1/VZdadXxaGVzfI1Wgj8e/73LOk4tzJZWVsXaZ1Z2wjo8cul6qJKYwa7GRXOgACAAAAAAAAAAAAAAAAAAAAAAAAAAAGo9odGpxT7o25R4tL4MdwuPrgdRp4qal3iRxfNL5Is62LbaMNPXyl065ZXS5Rk2NU8Yzjc1Go1kaq3N527Ldv0RoeHe2tVtnJut8Zaxh9sjTMlvb6VpNR4Zs6rcnE1a1p4ZvdBrM4TfoyeJ63wMa5ZRkGAAAAAAAAAAAAAAAAAAAAR23KPU11+qk/QLpsJ6iK7kEteuyNXOwhlcF03C1/y/JnHXR77fU0qsErQajoIamD6NGt4vYn0+prfeY3ye2SygsjWXV8zI507FzlPWkUrQca0crKuWPXfvjqsPf6nB6XgU6Zr4XjmTlJ7YS6JL17n1SyBrboLOyz5bWR01M7Jo0k+aKeHl7m00N7WM+TXxmkZ1tvoKw7XQalPCL5xfCtTzS6vCOv08soniVKAAgAAAAAAAAAAAAAEV9yivmeai3C+Zr5yyF08sm3u2V5yJLWUrrQpZYivKwgnZueRluBahMxssK87eyyRznsBO7TPTWNsp17luuWPQCzdHuVIy3LnP2KtkSKwuexr7Km2XJMw5f7BVZx33eSeCwvXrt+hlTD94/QmlSWM1Fw22CnKCeJR6p911TXlYOt4XdlY+RyFyfNW1FOXMop4eeXq0/kdlwzT8kfm+oas1FwABzAAAAAAAAAAAI754RIUNTbkLEVkyJsJHljCqmruaNbZYXr0ay8DGTPHZg8h+/7EE34Al98Yp5MI+p4mBbr8Ek5EVKJmiib3m3qRTkY56GM9wPcklcU9jCuvJaoj/wBGbFiarTr9/ktVafmeMHmnWdja6OnBBDTwpJ8zb9EbBI9Bpm3YAAgAAAAAAAAAAINTZhGvzlk2qllka2QaeS2K1siWcinbIohusNfb1LdsipNAQylgitj3/qSXESW27ICPGexiTVwAy00tvQsxRVqjgtpFGFh5WZWIVwAmitti5pofhEFcf0LtMSKsaSvfJtKUVKlhF2CIlZAArIAAAAAAAAAAB5LoemNnR+gGrm9zGyQciLOQ08sZVkWJsrtgVJorWsuWLcpWdSiKa2IuXbJOkeKGzArRLkEQcv4JYsissFiBDElQR64EkImUUSVQCs64l6iJDXWXKoEFiiOS6iCqOCcRmgAKgAAAAAAAAAABjY9n6GRDq7FGLyBp7pESmJyyzFQDZZYuhFzIylXgrXMD2yXUqyW57kx5yoxkjGbPZMhcgMkexI0zznwyVVgmpZVUyetgXIljTpsiqNlpaskokhWWKiPVWKKx3IdJZkm102lZIYVMzNMUAAQAAAAAAAAPGz0wtWUBW1GofbY1Wrtfl/ct6jJq9Uw0jjc8liMzVW2YJdLqMvft9hFXrZFS1ntt2SC2wqIubBjzbEVrIEpPpsRUtluMkDvTjn7oxloW9239zD/BJec+pN06K9T2M3Zk8WiXn+pJDT+H+CWVrohNlui0xogv9L79P35K10XXLDJLf6WN5p7N0dJoIJxOI0us7HWcH1Se2dmkaZecUpaeezKML+Xb5nR3VKaaZzHEtO63v9PQzZprG7bnQ6rJsjktDrMHQ6TWKSLKzlFwHikemmAAAAAAAAA1vE9LbLeE8Y7eTZADklr9TW2rqOZdpQ649DyWshNZ5Zp+HBnWtHirXhfYLt851Gsg218Sx5hJfnBSfEEv9x9Qlp4PrGP2RDZw2mXWuD/4oml+nzdcWj5X3MZcRUtk19z6JPgenezqh/KjW3exekk21Dlf/wA7A+nLxsyjOu3DNuvYWMW+S6xJ9m8r7Mjs9i7Osb3n5xQ7NxQ99l4M7Gsr5mL9ldZB5UoT+XQg1PDdbFf+Hp/DPP6o1KdLWojlY6eMFHSahqThPqu/ZrszNSvaSdFiafjqjX6yi2Tz7u1S3eOTbO3f6fkbVubUsOS3x1x1S8r0MVXPUpwjFOyK5lJNJTh2az9sGt4atS//AE2p/NJp/k2Oj0et0v8AnRr23+DKcsPqsduhm9rvSjS3GXLKLUls01hp/M2eh4jyyX2NHxPi1llsrJwnGTaWHF4UV0SIXrk/4k8/wS/XBKsfSdNxlLaX03LeqhXdDLeNuvg+dQ4tCdePiUorZ8suvrg3ns7xiVq9267JJrD/AMuWF67BLP8AEGpkq5P4k15TyiajiaXR/ks6v2FqlJyhZZDPVJ7b/IqL2Ba6Xy+xPmn3P63ek4lzdXv2NnpNYpbN4Zztfsnalj37/lRe0vALMr3l0pJdEkov7ouktldADyEcJLwemmAAAAAAAAAAAAAAAAAAAAAB5g85F4X2MgB4orwj1oACGelg+sIv/ijH/A1fwQ/lRYAFdaGr+CH8qJKqYx/0xS9FgkAAAAAAAAAAAAf/2Q==" class="img-fluid" alt="cart img">
+    </div>
+
+    <!-- cart product details -->
+<div class="col-md-7 col-11 mx-auto px-4 mt-2">
+    <div class="row">
+    <!-- product name  -->
+    <div class="col-6 card-title">
+    <h1 class="mb-4 product_name">GERMAN SHEPHERD</h1>
+    <p class="mb-2">DOG-GERMAN</p>
+    <p class="mb-2">COLOR: BLACK AND BROWN</p>
+    <p class="mb-3">SIZE: SMALL</p>
+    </div>
+    <!-- quantity inc dec -->
+    <div class="col-6">
+    <ul class="pagination justify-content-end set_quantity">
+    <li class="page-item">
+    <button class="page-link " onclick="decreaseNumber('textbox1','itemval1')"> <i class="fas fa-minus" ></i> </button>
+    </li>
+    <li class="page-item"><input type="text" name="" class="page-link" value="0" id="textbox1" >
+    </li>
+    <li class="page-item">
+    <button class="page-link" onclick="increaseNumber('textbox1','itemval1')"> <i class="fas fa-plus"></i></button>
+    </li>
+    </ul>
+    </div>
+    </div>
+    <!-- //remover move and price -->
+    <div class="row">
+    <div class="col-8 d-flex justify-content-between remove_wish">
+    <p><i class="fas fa-trash-alt"></i> REMOVE ITEM</p>
+    <p><i class="fas fa-heart"></i>MOVE TO WISH LIST </p>
+    </div>
+    <div class="col-4 d-flex justify-content-end price_money">
+    <h3>$<span id="itemval1">0.00 </span> </h3>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- right side div -->
+    <div class="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5">
+    <div class="right_side p-3 shadow bg-white">
+    <h2 class="product_name mb-5">The Total Amount Of</h2>
+    <div class="price_indiv d-flex justify-content-between">
+    <p>Product amount</p>
+    <p>$<span id="product_total_amt">0.00</span></p>
+    </div>
+    <div class="price_indiv d-flex justify-content-between">
+    <p>Shipping Charge</p>
+    <p>$<span id="shipping_charge">50.0</span></p>
+    </div>
+    <hr />
+    <div class="total-amt d-flex justify-content-between font-weight-bold">
+    <p>The total amount of (including VAT)</p>
+    <p>$<span id="total_cart_amt">0.00</span></p>
+    </div>
+    <button class="btn btn-primary text-uppercase">Checkout</button>
+    </div>
+    <!-- discount code part -->
+    <!-- <div class="discount_code mt-3 shadow">
+    <div class="card">
+    <div class="card-body">
+    <a class="d-flex justify-content-between" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Add a discount code (optional)
+    <span><i class="fas fa-chevron-down pt-1"></i></span>
+    </a>
+    <div class="collapse" id="collapseExample">
+    <div class="mt-3">
+    <input type="text" name="" id="discount_code1" class="form-control font-weight-bold" placeholder="Enter the discount code">
+    <small id="error_trw" class="text-dark mt-3">code is thapa</small>
+    </div>
+    <button class="btn btn-primary btn-sm mt-3" onclick="discount_code()">Apply</button>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    discount code ends -->
+<!-- <div class="mt-3 shadow p-3 bg-white">
+    <div class="pt-4">
+    <h5 class="mb-4">Expected delivery date</h5>
+    <p>July 27th 2020 - July 29th 2020</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div> -->
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript">
+    
+    var product_total_amt = document.getElementById('product_total_amt');
+    var shipping_charge = document.getElementById('shipping_charge');
+    var total_cart_amt = document.getElementById('total_cart_amt');
+    var discountCode = document.getElementById('discount_code1');
+    const decreaseNumber = (incdec, itemprice) => {
+    var itemval = document.getElementById(incdec);
+    var itemprice = document.getElementById(itemprice);
+    console.log( itemprice.innerHTML);
+    // console.log(itemval.value);
+    if(itemval.value <= 0){
+    itemval.value = 0;
+    alert('Negative quantity not allowed');
+    }else{
+    itemval.value = parseInt(itemval.value) - 1;
+    itemval.style.background = '#fff';
+    itemval.style.color = '#000';
+    itemprice.innerHTML  = parseInt(itemprice.innerHTML) - 15;
+    product_total_amt.innerHTML  = parseInt(product_total_amt.innerHTML) - 15;
+    total_cart_amt.innerHTML  = parseInt(product_total_amt.innerHTML) + parseInt(shipping_charge.innerHTML);
+    }
+    }
+    const increaseNumber = (incdec, itemprice) => {
+    var itemval = document.getElementById(incdec);
+    var itemprice = document.getElementById(itemprice);
+    // console.log(itemval.value);
+    if(itemval.value >= 5){
+    itemval.value = 5;
+    alert('max 5 allowed');
+    itemval.style.background = 'red';
+    itemval.style.color = '#fff';
+    }else{
+    itemval.value = parseInt(itemval.value) + 1;
+    itemprice.innerHTML  = parseInt(itemprice.innerHTML ) + 15;
+    product_total_amt.innerHTML  = parseInt(product_total_amt.innerHTML) + 15;
+    total_cart_amt.innerHTML  = parseInt(product_total_amt.innerHTML) + parseInt(shipping_charge.innerHTML);
+    }
+    }
+
+    const  discount_code = () => {
+let totalamtcurr = parseInt(total_cart_amt.innerHTML);
+let error_trw = document.getElementById('error_trw');
+if(discountCode.value === 'thapa'){
+let newtotalamt = totalamtcurr - 15;
+total_cart_amt.innerHTML = newtotalamt;
+error_trw.innerHTML = "Hurray! code is valid";
+}else{
+error_trw.innerHTML = "Try Again! Valid code is thapa";
+}
+}
+</script>
+</body>
+</html>

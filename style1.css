@@ -1,0 +1,394 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+.container{
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+   background-image:url(https://media.istockphoto.com/vectors/dots-halftone-yellow-halftone-background-design-templatevector-use-vector-id1316401120?k=20&m=1316401120&s=612x612&w=0&h=Q5FKLWbAZ6QPeQcfRRfrygdqiwF1Bf_1KxTROwClO3U=) ;
+    /* background-position: center; */
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+.full{
+    display: flex;
+}
+.navbar{
+    width:100% ;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+
+}
+.logo{
+    width: 100px;
+    height: 70px;
+    border: 2px solid rgb(74, 90, 177);
+    border-radius: 5px;
+}
+.cart{
+    width: 40px;
+    cursor: pointer}
+
+
+nav{
+    flex: 1;
+    padding-left: 60px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #333 ;
+}
+.img img{
+    border-radius: 150px 70px 200px 0px;
+     box-shadow: 20px 10px 20px rgb(37, 36, 36) ; 
+     border-color: blue;
+}
+
+
+.content h4{
+    font-family: joker;
+    font-size: 50px;
+    font-weight: 80;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #232d60;
+}
+.content p{
+    font-size: 20px;
+    color: #6a7199;
+
+}
+.content{
+
+   
+    margin-left:5% ;
+    margin-top:10% ;
+}
+
+ .btn{
+    margin-top: 20px;
+    margin-left: 250px;
+    display: inline-block;
+    background: linear-gradient(45deg,#254ca1,#f2f920);
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+
+}
+ .btn :hover{
+  background-color: linear-gradient(200deg,#447272,#e38cc3);
+box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+box-sizing: border-box;
+
+}
+
+.form{
+    
+    margin-top: 50px;
+    background: linear-gradient(45deg,#87adfe,#ff77cd);
+    box-shadow: 3px 8px 22px rgba(16, 7, 12, 0.15);
+  
+    border-radius: 10px;
+    height: 60%;
+    position: absolute;
+    bottom: 100px;
+    right: 180px;
+    left: 900px;
+    width: 30%;
+   
+}
+.form:hover{
+    background: linear-gradient(200deg,#e0e3e3,#e38cc3);
+    box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+    
+
+}
+form{
+    padding-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+   
+    
+}
+.email{
+    font-size: 15px;
+   padding-left: 5px ;
+    border: 3px solid rgb(183, 84, 160);
+    border-radius: 4px;
+    height: 45px;
+    width: 100%;
+    margin-right: 1px;
+}
+.email2{
+    font-size: 15px;
+    padding-left:5px ;
+    border: 3px solid  rgb(183, 84, 160);
+    border-radius: 4px;
+    height: 45px;
+    width: 100%;
+    margin-right: 1px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+h1{
+    color: #884d7d;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
+h1:hover{
+    color: rgb(201, 18, 149);
+}
+h3{
+    color: white;
+    margin-top: 4px;
+    font-size: 20px;
+}
+h3:hover{
+    color: #33192e;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+button{
+    height:40px;
+    width: 150px;
+    justify-content: center;
+    font-size: 15px;
+    border: 3px solid  rgb(183, 84, 160);
+    border-radius: 4px;
+    transition: ease-out 0.7s;
+    box-shadow: inset 0 0 0 0 pink;
+   
+    
+}
+button:hover{
+    box-shadow: inset 250px 0 0 0 pink;
+    background-color:rgb(34, 55, 92) ;
+
+
+}
+
+
+.div2{
+   
+    margin-top: 210px;
+    height: 40px;
+    background-color:white;
+}
+h5{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    color: #884d7d;
+    font-family: joker;
+}
+.span{
+    font-size: 55px;
+    font-family:cursive ;
+    color:rgb(10, 30, 102);
+}
+.div3{
+
+        
+    background: linear-gradient(45deg,#254ca1,#f2f920);
+        position: relative;
+        opacity: -1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 100px;
+        width: 1100px;
+        height: 50px;
+        flex-wrap: wrap;
+        padding: 20px;
+        margin: 20px 100px;
+        
+}
+.div3 .cards{  
+    position: relative;
+    top: 1px;
+    max-width: 300px;
+    height: 370px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 18px ;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+
+   
+}
+.div5{
+    margin-top: 1000px;
+    margin-right: 0px;
+    height: 500px;
+    display: flex;
+    background-color: lightskyblue
+   
+}
+
+
+
+
+.contact{
+    margin-top: 30px;
+    padding: 40px;
+    background-image:url('https://previews.123rf.com/images/zendograph/zendograph1902/zendograph190200007/117674848-hand-reaching-to-the-pink-retro-telephone-phone-calling-on-pink-background-handset-floating-on-pink-.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+
+.contacts{
+    margin-top: 100px;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+
+ }
+ input{
+     display: block;
+    width: 300px; 
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 5px;
+ }
+ .contacts:hover{
+     
+    border-radius: 2px;
+    background-color:white;
+    color:black;
+    cursor: pointer;
+}
+
+
+.pic{
+    background-color: white;
+    color: white;
+    margin-top: 150px;
+}
+
+.dabba{
+   
+    width:100%;
+    height:600px;
+}
+
+.content1 h4{
+    font-size: 50px;
+    font-weight: 80;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: yellowgreen;
+}
+.content1 p{
+    font-size: 20px;
+    color: rgb(54, 73, 16);
+
+}
+.content1{
+
+   
+    margin-left:5% ;
+    margin-top:10% ;
+}
+
+
+
+/* 
+
+
+.cart{
+
+    margin-top: 15px;
+    width:1200px;
+    height:900px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    
+}
+.cart-img img{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    
+} */
+.card{
+    display: flex;
+    width:100vw;
+    gap: 100px;
+}
+
+.how {
+    background: #d8d8df url(./assets/images/texture.png) repeat;
+    padding: 6rem 0;
+    text-align: center;
+    position: relative;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+user agent stylesheet
+section {
+    display: block;
+}
+body {
+    font-family: "Reader", -apple-system, "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #373a3c;
+    background-color: #F5F6F5;
+}
+html {
+    font-size: 15px;
+    -webkit-tap-highlight-color: transparent;
+}
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+.how:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(10, 10, 10, 0.07);
+    width: 50%;
+    display: none;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
